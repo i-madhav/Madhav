@@ -3,7 +3,8 @@ const emailInput = document.querySelector(".Email");
 const submitButton = document.querySelector("#submitButton");
 
 
-submitButton.addEventListener("click" , ()=>{
+submitButton.addEventListener("click" , (e)=>{
+    e.preventDefault();
 
     const name = nameInput.value;
     const email = emailInput.value;
@@ -12,7 +13,10 @@ submitButton.addEventListener("click" , ()=>{
    if(!name || !email){
     return alert("Field is empty")
    }else if(!email.match(emailRegex)){
-        return alert("Email Format is Wrong")
+         alert("Email Format is Wrong")
+        return emailInput.classList.add("input-error")
+   }else{
+     emailInput.classList.remove("input-error")
    }
 
     const userData = {
