@@ -1,9 +1,10 @@
 .container{
     width: 930px;
-    height: 542px;
-    background-color: aliceblue;
+    height: 32.8rem;
+    background-color: white;
     margin: 8rem auto;
     display: flex;
+    box-shadow: 0px 5px 6px 0px rgba(19, 18, 66, 0.12);
 }
 
 .photo{
@@ -20,16 +21,27 @@
 }
 
 .intro{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 2.8rem;
-    text-align: center;
+    text-align: left;
     color: #030303;
     font-family: Satoshi;
-    font-size: 11.2px;
+    font-size: 11.5px;
     font-style: normal;
     font-weight: 900;
     line-height: 16.8px; /* 150% */
     letter-spacing: 4px;
     text-transform: uppercase;
+
+    background: linear-gradient(180deg, #1E1E1E 0%, rgba(33, 33, 33, 0.00) 207.14%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.intro h2{
+    font-size: 2rem;
 }
 
 .input{
@@ -43,21 +55,36 @@
 }
 
 .Name{
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     border-radius: 60px;
     border: 1px solid #D8D8D8;
     background: #FFF;
+    border: none;
+    outline: none;
     box-shadow: 0px 5px 6px 0px rgba(19, 18, 66, 0.12);
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .Name::placeholder {
-    color: plum;
-}
+
+    color: #6F6C90;
+
+    /* Other/18-20 R */
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 111.111% */
+    }
+
   
 
 .Email{
-    padding: 1rem 5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
     border-radius: 60px;
     border: 1px solid #D8D8D8;
     background: #FFF;
@@ -65,13 +92,24 @@
 }
 
 .Email::placeholder {
-    color: plum;
+   
+    color: #6F6C90;
+
+    /* Other/18-20 R */
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 111.111% */
+    
   }
   
 .btn{
-    margin-top: 5rem;
-   padding: 1rem 4rem;
-
+     margin-top: 5rem;
+     font-size: 1rem;
+   padding: 1.2rem 7rem;
+   font-weight: bold;
+    border: none;
     border-radius: 44px;
     background: linear-gradient(0deg, #DEBB0A 0%, #FFD814 100%);
     box-shadow: 0px 2.21613px 9.60323px 0px rgba(153, 129, 0, 0.36), 0px 4px 0px 0px #947E10;
