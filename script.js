@@ -8,7 +8,12 @@ submitButton.addEventListener("click" , ()=>{
     const name = nameInput.value;
     const email = emailInput.value;
 
-   if(!name || !email) return alert("Field is Empty");
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+   if(!name || !email){
+    return alert("Field is empty")
+   }else if(!email.match(emailRegex)){
+        return alert("Email Format is Wrong")
+   }
 
     const userData = {
         name:name,
